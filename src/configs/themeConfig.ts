@@ -17,7 +17,7 @@ type ThemeConfig = {
 
 const themeConfig: ThemeConfig = {
   // ** Layout Configs
-  templateName: 'Sở TNMT Quảng Ngãi' /* App Name */,
+  templateName: 'Cổng dữ liệu tài nguyên môi trường tỉnh Sơn La' /* App Name */,
   mode: 'light' /* light | dark */,
   contentWidth: 'full' /* full | boxed */,
 

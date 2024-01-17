@@ -15,316 +15,223 @@ const navigation = (): VerticalNavItemsType => {
       path: '/'
     },
     {
-      title: 'Công trình',
-      primaryPath: 'cong-trinh',
+      title: 'Dữ liệu đất đai',
+      primaryPath: 'dat-dai',
       children: [
         {
-          title: 'Bản đồ công trình',
-          path: '/cong-trinh'
+          title: 'Dữ liệu chung',
+          path: '/dat-dai/chung'
         },
         {
-          title: 'Nước mặt',
-          path: '/cong-trinh/nuoc-mat'
+          title: 'Dữ liệu phòng',
+          path: '/dat-dai/phong'
         },
         {
-          title: 'Nước dưới đất',
-          path: '/cong-trinh/nuoc-duoi-dat'
+          title: 'Văn bản quy phạm pháp luật',
+          path: '/dat-dai/van-ban'
         },
         {
-          title: 'Xả thải',
-          path: '/cong-trinh/xa-thai'
+          title: 'Cá nhân',
+          path: '/dat-dai/ca-nhan'
         }
       ]
     },
     {
-      title: 'Quan trắc',
+      title: 'Dữ liệu giá đất & GPMB',
+      primaryPath: 'gia-dat-gpmb',
+      children: [
+        {
+          title: 'Dữ liệu chung',
+          path: '/gia-dat-gpmb/chung'
+        },
+        {
+          title: 'Dữ liệu phòng',
+          path: '/gia-dat-gpmb/phong'
+        },
+        {
+          title: 'Văn bản quy phạm pháp luật',
+          path: '/gia-dat-gpmb/van-ban'
+        },
+        {
+          title: 'Cá nhân',
+          path: '/gia-dat-gpmb/ca-nhan'
+        }
+      ]
+    },
+    {
+      title: 'Dữ liệu TNN, KS, KTTV',
+      primaryPath: 'tnn-ks-kttv',
+      children: [
+        {
+          title: 'Dữ liệu chung',
+          path: '/tnn-ks-kttv/chung'
+        },
+        {
+          title: 'Dữ liệu phòng',
+          path: '/tnn-ks-kttv/phong'
+        },
+        {
+          title: 'Văn bản quy phạm pháp luật',
+          path: '/tnn-ks-kttv/van-ban'
+        },
+        {
+          title: 'Cá nhân',
+          path: '/tnn-ks-kttv/ca-nhan'
+        }
+      ]
+    },
+    {
+      title: 'Dữ liệu môi trường',
+      primaryPath: 'moi-truong',
+      children: [
+        {
+          title: 'Dữ liệu chung',
+          path: '/moi-truong/chung'
+        },
+        {
+          title: 'Dữ liệu phòng',
+          path: '/moi-truong/phong'
+        },
+        {
+          title: 'Văn bản quy phạm pháp luật',
+          path: '/moi-truong/van-ban'
+        },
+        {
+          title: 'Cá nhân',
+          path: '/moi-truong/ca-nhan'
+        }
+      ]
+    },
+    {
+      title: 'Dữ liệu thanh tra',
+      primaryPath: 'thanh-tra',
+      children: [
+        {
+          title: 'Dữ liệu chung',
+          path: '/thanh-tra/chung'
+        },
+        {
+          title: 'Dữ liệu phòng',
+          path: '/thanh-tra/phong'
+        },
+        {
+          title: 'Văn bản quy phạm pháp luật',
+          path: '/thanh-tra/van-ban'
+        },
+        {
+          title: 'Cá nhân',
+          path: '/thanh-tra/ca-nhan'
+        }
+      ]
+    },
+    {
+      title: 'Dữ liệu văn phòng',
+      primaryPath: 'van-phong',
+      children: [
+        {
+          title: 'Dữ liệu chung',
+          path: '/van-phong/chung'
+        },
+        {
+          title: 'Dữ liệu phòng',
+          path: '/van-phong/phong'
+        },
+        {
+          title: 'Văn bản quy phạm pháp luật',
+          path: '/van-phong/van-ban'
+        },
+        {
+          title: 'Cá nhân',
+          path: '/van-phong/ca-nhan'
+        }
+      ]
+    },
+    {
+      title: 'Dữ liệu VP đăng ký đất đai',
+      primaryPath: 'dang-ky-dat-dai',
+      children: [
+        {
+          title: 'Dữ liệu chung',
+          path: '/dang-ky-dat-dai/chung'
+        },
+        {
+          title: 'Dữ liệu phòng',
+          path: '/dang-ky-dat-dai/phong'
+        },
+        {
+          title: 'Văn bản quy phạm pháp luật',
+          path: '/dang-ky-dat-dai/van-ban'
+        },
+        {
+          title: 'Cá nhân',
+          path: '/dang-ky-dat-dai/ca-nhan'
+        }
+      ]
+    },
+    {
+      title: 'Dữ liệu quan trắc MT',
       primaryPath: 'quan-trac',
       children: [
         {
-          title: 'Nước mặt',
-          path: '/quan-trac/nuoc-mat'
+          title: 'Dữ liệu chung',
+          path: '/quan-trac/chung'
         },
         {
-          title: 'Nước dưới đất',
-          path: '/quan-trac/nuoc-duoi-dat'
+          title: 'Dữ liệu phòng',
+          path: '/quan-trac/phong'
         },
         {
-          title: 'Xả thải',
-          path: '/quan-trac/xa-thai'
+          title: 'Văn bản quy phạm pháp luật',
+          path: '/quan-trac/van-ban'
+        },
+        {
+          title: 'Cá nhân',
+          path: '/quan-trac/ca-nhan'
         }
       ]
     },
     {
-      title: 'Giám sát',
-      primaryPath: 'giam-sat',
+      title: 'Dữ liệu CNTT',
+      primaryPath: 'cntt',
       children: [
         {
-          title: 'Đăng ký kết nối',
-          path: '/giam-sat/yeu-cau-ket-noi'
+          title: 'Dữ liệu chung',
+          path: '/cntt/chung'
         },
         {
-          title: 'QL đăng ký kết nối',
-          path: '/giam-sat/quan-ly-yeu-cau-ket-noi'
+          title: 'Dữ liệu phòng',
+          path: '/cntt/phong'
         },
         {
-          title: 'KT,SD nước mặt',
-          path: '/giam-sat/nuoc-mat'
+          title: 'Văn bản quy phạm pháp luật',
+          path: '/cntt/van-ban'
         },
         {
-          title: 'KT,SD nước dưới đất',
-          path: '/giam-sat/nuoc-duoi-dat'
-        },
-        {
-          title: 'Xả thải',
-          path: '/giam-sat/xa-thai'
+          title: 'Cá nhân',
+          path: '/cntt/ca-nhan'
         }
       ]
     },
     {
-      title: 'Trữ lượng nước',
-      primaryPath: 'tru-luong-nuoc',
+      title: 'Dữ liệu phát triển quỹ đất',
+      primaryPath: 'quy-dat',
       children: [
         {
-          sectionTitle: 'Nước mưa',
+          title: 'Dữ liệu chung',
+          path: '/quy-dat/chung'
         },
         {
-          title: 'Nước mưa',
-          path: '/tru-luong-nuoc/nuoc-mua'
-        },
-
-        //
-        {
-          sectionTitle: 'Nước mặt',
+          title: 'Dữ liệu phòng',
+          path: '/quy-dat/phong'
         },
         {
-          title: 'Số lượng',
-          path: '/tru-luong-nuoc/nuoc-mat/so-luong'
+          title: 'Văn bản quy phạm pháp luật',
+          path: '/quy-dat/van-ban'
         },
         {
-          title: 'Tổng lượng',
-          path: '/tru-luong-nuoc/nuoc-mat/tong-luong'
-        },
-        {
-          title: 'Chất lượng nước',
-          path: '/tru-luong-nuoc/nuoc-mat/chat-luong-nuoc'
-        },
-
-        //
-        {
-          sectionTitle: 'Nước dưới đất',
-        },
-        {
-          title: 'Số lượng NDĐ',
-          path: '/tru-luong-nuoc/nuoc-duoi-dat/so-luong'
-        },
-        {
-          title: 'Tổng lượng NDĐ',
-          path: '/tru-luong-nuoc/nuoc-duoi-dat/tong-luong'
-        },
-        {
-          title: 'Chất lượng NDĐ',
-          path: '#'
-        },
-      ]
-    },
-    {
-      title: 'Giấy phép',
-      primaryPath: 'giay-phep',
-      children: [
-        {
-          title: 'QL cấp phép',
-          path: '/giay-phep/quan-ly'
-        },
-        {
-          sectionTitle: 'Nước mặt',
-        },
-        {
-          title: 'Nước mặt',
-          path: '/giay-phep/nuoc-mat'
-        },
-
-        //
-        {
-          sectionTitle: 'Nước dưới đất',
-        },
-        {
-          title: 'Khai thác sử dụng',
-          path: '/giay-phep/nuoc-duoi-dat/khai-thac-su-dung'
-        },
-        {
-          title: 'Thăm dò',
-          path: '/giay-phep/nuoc-duoi-dat/tham-do'
-        },
-        {
-          title: 'Hành nghề khoan',
-          path: '/giay-phep/nuoc-duoi-dat/hanh-nghe-khoan'
-        },
-
-        //
-        {
-          sectionTitle: 'Xả thải',
-        },
-        {
-          title: 'Xả thải',
-          path: '/giay-phep/xa-thai'
+          title: 'Cá nhân',
+          path: '/quy-dat/ca-nhan'
         }
-      ]
-    },
-    {
-      title: 'Tiền cấp quyền',
-      primaryPath: 'tien-cap-quyen',
-      children: [
-        {
-          title: 'Giấy phép Bộ cấp',
-          path: '/tien-cap-quyen/bo-cap'
-        },
-        {
-          title: 'Giấy phép Tỉnh cấp',
-          path: '/tien-cap-quyen/tinh-cap'
-        }
-      ]
-    },
-    {
-      title: 'Thông tin - Dữ liệu',
-      children: [
-        {
-          sectionTitle: 'Số lượng, chất lượng nước',
-        },
-        {
-          title: 'Số lượng nước',
-          path: '/thong-tin-du-lieu/so-luong-nuoc'
-        },
-        {
-          title: 'Chất lượng nước',
-          path: '/thong-tin-du-lieu/chat-luong-nuoc'
-        },
-
-        //
-        {
-          sectionTitle: 'Số liệu điều tra',
-        },
-        {
-          title: 'Điều tra nước dưới đất',
-          path: '#'
-        },
-        {
-          title: 'Vùng hạn chế KTNDĐ',
-          path: '#'
-        },
-
-        //
-        {
-          sectionTitle: 'KTSD Tài nguyên nước',
-        },
-        {
-          title: 'Danh mục CTKTSDN',
-          path: '/thong-tin-du-lieu/danh-muc-ctktsdn'
-        },
-        {
-          title: 'KTSD nước mặt ',
-          path: '/thong-tin-du-lieu/ktsd-nuoc-duoi-dat'
-        },
-        {
-          title: 'KTSD nước dưới đất ',
-          path: '#'
-        },
-
-        //
-        {
-          sectionTitle: 'Kết quả cấp phép',
-        },
-        {
-          title: 'Kết quả cấp phép',
-          path: '/thong-tin-du-lieu/ket-qua-cap-phep'
-        },
-
-        //
-        {
-          sectionTitle: 'HSKT Trạm',
-        },
-        {
-          title: 'Nước mặt',
-          path: '/thong-tin-du-lieu/hskt-tram/nuoc-mat'
-        },
-        {
-          title: 'Nước dưới đất',
-          path: '/thong-tin-du-lieu/hskt-tram/nuoc-duoi-dat'
-        },
-
-        //
-        {
-          sectionTitle: 'Danh mục nguồn nước',
-        },
-        {
-          title: 'Hành lang BVNN',
-          path: '/thong-tin-du-lieu/hanh-lang-bao-ve-nguon-nuoc'
-        },
-        {
-          title: 'Danh mục NNNT',
-          path: '/thong-tin-du-lieu/danh-muc-mnnt'
-        },
-      ]
-    },
-    {
-      title: 'Thông báo - cảnh báo',
-      primaryPath: 'thong-bao-canh-bao',
-      path: '/thong-bao-canh-bao'
-    },
-    {
-      title: 'Báo cáo biểu mẫu',
-      path: '/bao-cao-bieu-mau'
-    },
-    {
-      title: 'KN tiếp nhận nước thải',
-      children: [
-        {
-          sectionTitle: 'Nguồn nước sông,suối',
-        },
-        {
-          title: 'CLN theo QCVN ',
-          path: '/kn-tiep-nhan-nuoc-thai/nguon-nuoc-song/cln'
-        },
-        {
-          title: 'Thông tin nguồn thải',
-          path: '/kn-tiep-nhan-nuoc-thai/nguon-nuoc-song/tt-nguon-thai'
-        },
-        {
-          title: 'Thông tin nguồn TNNT ',
-          path: '/kn-tiep-nhan-nuoc-thai/nguon-nuoc-song/tt-nhan-nuoc-thai'
-        },
-        {
-          title: 'Khả năng TNNT sông,suối',
-          path: '#'
-        },
-        {
-          title: 'Tính dự báo KNTNNT sông,suối',
-          path: '/kn-tiep-nhan-nuoc-thai/nguon-nuoc-song/du-bao-kntnnt'
-        },
-
-        //
-        {
-          sectionTitle: 'Nguồn nước ao,hồ',
-        },
-        {
-          title: 'Thông số CLN theo QCVN',
-          path: '/kn-tiep-nhan-nuoc-thai/nguon-nuoc-ao/cln'
-        },
-        {
-          title: 'Thông tin nguồn thải ao,hồ',
-          path: '#'
-        },
-        {
-          title: 'Thông tin ao,hồ',
-          path: '#'
-        },
-        {
-          title: 'Khả năng TNNT ao,hồ',
-          path: '#'
-        },
-        {
-          title: 'Tính dự báo KNTNNT ao,hồ',
-          path: '#'
-        },
       ]
     },
     {

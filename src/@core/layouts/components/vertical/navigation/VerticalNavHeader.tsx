@@ -52,16 +52,13 @@ const VerticalNavHeader = (props: Props) => {
   const { verticalNavMenuBranding: userVerticalNavMenuBranding } = props
 
   return (
-    <MenuHeaderWrapper className='nav-header' sx={{ pl: 6, borderBottom: '1px solid #4b545c' }}>
+    <MenuHeaderWrapper className='nav-header' sx={{ m:'auto', p: 0 }}>
       {userVerticalNavMenuBranding ? (
         userVerticalNavMenuBranding(props)
       ) : (
         <Link href='/' passHref>
           <StyledLink>
             <img width={50} height={50} src="/images/logos/logo_sotnmt.png" alt="logo" />
-            <HeaderTitle variant='h6' style={{fontSize: 18, color: `#fff`}} sx={{ ml: 3 }}>
-              {themeConfig.templateName}
-            </HeaderTitle>
           </StyledLink>
         </Link>
       )}
