@@ -1,3 +1,5 @@
+import { ReactNode } from "react"
+import BlankLayout from "src/@core/layouts/BlankLayout"
 import Home from "src/views/home"
 
 const HomePage = () => {
@@ -6,6 +8,8 @@ const HomePage = () => {
     <Home />
   )
 }
+
+HomePage.getLayout = (page: ReactNode) => <BlankLayout>{page}</BlankLayout>
 
 export default HomePage
 

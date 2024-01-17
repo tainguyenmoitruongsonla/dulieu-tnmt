@@ -1,16 +1,24 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Grid from '@mui/material/Grid';
-import ConstructionStatus from './cons-status';
-import RealTime from './real-time';
-import CountLicense from './count-license';
-import CountLicenseFee from './count-license-fee';
-import HomeMap from './map';
 import { getData } from 'src/api/axios';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { Box, CardActionArea } from '@mui/material';
+import { styled } from '@mui/material/styles'
+
+
+// ** Next Imports
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+
+const LinkStyled = styled('a')(({ theme }) => ({
+    fontSize: '1rem',
+    textDecoration: 'none',
+    color: '#fff',
+    fontWeight: 400,
+}))
 
 const Home = () => {
     const [lcFee, setLicFee] = useState({ btnmt: [], ubnd: [] });
@@ -60,186 +68,216 @@ const Home = () => {
     }, []);
 
     return (
-        <Grid container direction="column" justifyContent="center">
-            <Grid container xs={12} md={12} justifyContent="center">
-                <Grid container direction="row" justifyContent="center" spacing={2} xs={10} md={10}>
-                    <Grid item xs={2} md={2}>
-                        <Card sx={{ maxWidth: 200 }}>
-                            <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="/static/images/cards/contemplative-reptile.jpg"
-                                    alt="green iguana"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom component="div" sx={{fontSize: 16, color: '#083071', fontWeight: '500'}}>
-                                        Đất đai
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
+        <>
+            <Box sx={{ p: 2, display: 'flex', background: '#00466e', alignItems: 'center', justifyContent: 'space-between' }}>
+                <Grid container md={6} alignItems='center'>
+                    <img src="/images/logos/logo_sotnmt.png" width={60} height={60} alt="logo-page" />
+                    <Typography
+                        variant='h6'
+                        align='left'
+                        sx={{
+                            color: '#fff !important',
+                            p: 2,
+                            lineHeight: 1,
+                            fontWeight: 600,
+                            textTransform: 'uppercase',
+                            fontSize: '1.5rem !important'
+                        }}
+                    >
+                        CỔNG THÔNG TIN DỮ LIỆU TÀI NGUYÊN MÔI TRƯỜNG TỈNH SƠN LA
+                    </Typography>
+                </Grid>
+                <Grid container md={6} alignItems='center' justifyContent='flex-end'>
+                    <Link passHref href='/'>
+                        <LinkStyled>Đăng nhập</LinkStyled>
+                    </Link> 
+                    <Typography variant='h6' align='right' sx={{color: '#fff'}}>&nbsp;|&nbsp;</Typography>
+                    <Link passHref href='/'>
+                        <LinkStyled>Hướng dẫn sử dụng</LinkStyled>
+                    </Link>
+                    
+                </Grid>
+            </Box>
+            <Grid container className='content-center'>
+                <Grid container xs={12} md={12} justifyContent="center" >
+                    <Grid container direction="row" justifyContent="center" spacing={1} xs={10} md={9} sx={{ p: 2 }}>
+                        <Grid item xs={2} md={2}>
+                            <Card sx={{ maxWidth: 200 }}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        height="140"
+                                        image="/static/images/cards/contemplative-reptile.jpg"
+                                        alt="green iguana"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
+                                            Đất đai
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={2} md={2}>
+                            <Card sx={{ maxWidth: 200 }}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        height="140"
+                                        image="/static/images/cards/contemplative-reptile.jpg"
+                                        alt="green iguana"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
+                                            Giá đất & GPMB
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={2} md={2}>
+                            <Card sx={{ maxWidth: 200 }}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        height="140"
+                                        image="/static/images/cards/contemplative-reptile.jpg"
+                                        alt="green iguana"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
+                                            TNN, KS, KTTV
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={2} md={2}>
+                            <Card sx={{ maxWidth: 200 }}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        height="140"
+                                        image="/static/images/cards/contemplative-reptile.jpg"
+                                        alt="green iguana"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
+                                            Môi trường
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={2} md={2}>
+                            <Card sx={{ maxWidth: 200 }}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        height="140"
+                                        image="/static/images/cards/contemplative-reptile.jpg"
+                                        alt="green iguana"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
+                                            Thanh tra
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
                     </Grid>
-                    <Grid item xs={2} md={2}>
-                        <Card sx={{ maxWidth: 200 }}>
-                            <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="/static/images/cards/contemplative-reptile.jpg"
-                                    alt="green iguana"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom component="div" sx={{fontSize: 16, color: '#083071', fontWeight: '500'}}>
-                                        Giá đất & GPMB
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={2} md={2}>
-                        <Card sx={{ maxWidth: 200 }}>
-                            <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="/static/images/cards/contemplative-reptile.jpg"
-                                    alt="green iguana"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom component="div" sx={{fontSize: 16, color: '#083071', fontWeight: '500'}}>
-                                        TNN, KS, KTTV
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={2} md={2}>
-                        <Card sx={{ maxWidth: 200 }}>
-                            <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="/static/images/cards/contemplative-reptile.jpg"
-                                    alt="green iguana"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom component="div" sx={{fontSize: 16, color: '#083071', fontWeight: '500'}}>
-                                        Môi trường
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={2} md={2}>
-                        <Card sx={{ maxWidth: 200 }}>
-                            <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="/static/images/cards/contemplative-reptile.jpg"
-                                    alt="green iguana"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom component="div" sx={{fontSize: 16, color: '#083071', fontWeight: '500'}}>
-                                        Thanh tra
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
+                    <Grid container direction="row" justifyContent="center" spacing={1} xs={10} md={9} sx={{ p: 2 }}>
+                        <Grid item xs={2} md={2}>
+                            <Card sx={{ maxWidth: 200 }}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        height="140"
+                                        image="/static/images/cards/contemplative-reptile.jpg"
+                                        alt="green iguana"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
+                                            Văn phòng
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={2} md={2}>
+                            <Card sx={{ maxWidth: 200 }}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        height="140"
+                                        image="/static/images/cards/contemplative-reptile.jpg"
+                                        alt="green iguana"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
+                                            Văn phòng ĐKĐĐ
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={2} md={2}>
+                            <Card sx={{ maxWidth: 200 }}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        height="140"
+                                        image="/static/images/cards/contemplative-reptile.jpg"
+                                        alt="green iguana"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
+                                            Quan trắc
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={2} md={2}>
+                            <Card sx={{ maxWidth: 200 }}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        height="140"
+                                        image="/static/images/cards/contemplative-reptile.jpg"
+                                        alt="green iguana"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
+                                            CNTT
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={2} md={2}>
+                            <Card sx={{ maxWidth: 200 }}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        height="140"
+                                        image="/static/images/cards/contemplative-reptile.jpg"
+                                        alt="green iguana"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
+                                            Phát triển quỹ đất
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid container xs={12} md={12} justifyContent="center">
-                <Grid container direction="row" justifyContent="center" spacing={2} xs={10} md={10}>
-                    <Grid item xs={2} md={2}>
-                        <Card sx={{ maxWidth: 200 }}>
-                            <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="/static/images/cards/contemplative-reptile.jpg"
-                                    alt="green iguana"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom component="div" sx={{fontSize: 16, color: '#083071', fontWeight: '500'}}>
-                                        Đất đai
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={2} md={2}>
-                        <Card sx={{ maxWidth: 200 }}>
-                            <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="/static/images/cards/contemplative-reptile.jpg"
-                                    alt="green iguana"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom component="div" sx={{fontSize: 16, color: '#083071', fontWeight: '500'}}>
-                                        Giá đất & GPMB
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={2} md={2}>
-                        <Card sx={{ maxWidth: 200 }}>
-                            <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="/static/images/cards/contemplative-reptile.jpg"
-                                    alt="green iguana"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom component="div" sx={{fontSize: 16, color: '#083071', fontWeight: '500'}}>
-                                        TNN, KS, KTTV
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={2} md={2}>
-                        <Card sx={{ maxWidth: 200 }}>
-                            <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="/static/images/cards/contemplative-reptile.jpg"
-                                    alt="green iguana"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom component="div" sx={{fontSize: 16, color: '#083071', fontWeight: '500'}}>
-                                        Môi trường
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={2} md={2}>
-                        <Card sx={{ maxWidth: 200 }}>
-                            <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="/static/images/cards/contemplative-reptile.jpg"
-                                    alt="green iguana"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom component="div" sx={{fontSize: 16, color: '#083071', fontWeight: '500'}}>
-                                        Thanh tra
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                </Grid>
-            </Grid>
-        </Grid>
+        </>
+
     );
 };
 
