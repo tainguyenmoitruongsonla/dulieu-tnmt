@@ -101,7 +101,7 @@ const Home = () => {
             <Grid container className='content-center'>
                 <Grid container xs={12} md={12} justifyContent="center" >
                     <Grid container direction="row" justifyContent="center" spacing={1} xs={10} md={9} sx={{ p: 2 }}>
-                        <Grid item xs={2} md={2}>
+                        <Grid item xs={6} md={2}>
                             <Card sx={{ maxWidth: 200 }}>
                                 <CardActionArea>
                                     <CardMedia
@@ -118,14 +118,14 @@ const Home = () => {
                                 </CardActionArea>
                             </Card>
                         </Grid>
-                        <Grid item xs={2} md={2}>
+                        <Grid item xs={6} md={2}>
                             <Card sx={{ maxWidth: 200 }}>
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"
-                                        height="140"
-                                        image="/static/images/cards/contemplative-reptile.jpg"
-                                        alt="green iguana"
+                                        image="/images/logos/geological-sign.png"
+                                        alt="geological-sign"
+                                        sx={{margin: "20px auto", width: "75%"}}
                                     />
                                     <CardContent>
                                         <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
@@ -135,14 +135,14 @@ const Home = () => {
                                 </CardActionArea>
                             </Card>
                         </Grid>
-                        <Grid item xs={2} md={2}>
+                        <Grid item xs={6} md={2}>
                             <Card sx={{ maxWidth: 200 }}>
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"
-                                        height="140"
-                                        image="/static/images/cards/contemplative-reptile.jpg"
-                                        alt="green iguana"
+                                        image="/images/logos/hydrometeorology-sign.png"
+                                        alt="hydrometeorology-sign"
+                                        sx={{margin: "20px auto", width: "75%"}}
                                     />
                                     <CardContent>
                                         <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
@@ -152,14 +152,14 @@ const Home = () => {
                                 </CardActionArea>
                             </Card>
                         </Grid>
-                        <Grid item xs={2} md={2}>
+                        <Grid item xs={6} md={2}>
                             <Card sx={{ maxWidth: 200 }}>
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"
-                                        height="140"
-                                        image="/static/images/cards/contemplative-reptile.jpg"
-                                        alt="green iguana"
+                                        image="/images/logos/env-sign.png"
+                                        alt="env-sign"
+                                        sx={{margin: "20px auto", width: "75%"}}
                                     />
                                     <CardContent>
                                         <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
@@ -169,14 +169,14 @@ const Home = () => {
                                 </CardActionArea>
                             </Card>
                         </Grid>
-                        <Grid item xs={2} md={2}>
+                        <Grid item xs={6} md={2}>
                             <Card sx={{ maxWidth: 200 }}>
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"
-                                        height="140"
-                                        image="/static/images/cards/contemplative-reptile.jpg"
-                                        alt="green iguana"
+                                        image="/images/logos/logo_sotnmt.png"
+                                        alt="logo_sotnmt"
+                                        sx={{margin: "20px auto", width: "75%"}}
                                     />
                                     <CardContent>
                                         <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
@@ -188,7 +188,7 @@ const Home = () => {
                         </Grid>
                     </Grid>
                     <Grid container direction="row" justifyContent="center" spacing={1} xs={10} md={9} sx={{ p: 2 }}>
-                        <Grid item xs={2} md={2}>
+                        <Grid item xs={6} md={2}>
                             <Card sx={{ maxWidth: 200 }}>
                                 <CardActionArea>
                                     <CardMedia
@@ -205,7 +205,7 @@ const Home = () => {
                                 </CardActionArea>
                             </Card>
                         </Grid>
-                        <Grid item xs={2} md={2}>
+                        <Grid item xs={6} md={2}>
                             <Card sx={{ maxWidth: 200 }}>
                                 <CardActionArea>
                                     <CardMedia
@@ -222,14 +222,14 @@ const Home = () => {
                                 </CardActionArea>
                             </Card>
                         </Grid>
-                        <Grid item xs={2} md={2}>
+                        <Grid item xs={6} md={2}>
                             <Card sx={{ maxWidth: 200 }}>
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"
-                                        height="140"
-                                        image="/static/images/cards/contemplative-reptile.jpg"
-                                        alt="green iguana"
+                                        image="/images/logos/waterresources-sign.png"
+                                        alt="waterresources-sign"
+                                        sx={{margin: "20px auto", width: "75%"}}
                                     />
                                     <CardContent>
                                         <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
@@ -239,14 +239,14 @@ const Home = () => {
                                 </CardActionArea>
                             </Card>
                         </Grid>
-                        <Grid item xs={2} md={2}>
+                        <Grid item xs={6} md={2}>
                             <Card sx={{ maxWidth: 200 }}>
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"
-                                        height="140"
-                                        image="/static/images/cards/contemplative-reptile.jpg"
-                                        alt="green iguana"
+                                        image="/images/logos/slack.png"
+                                        alt="slack"
+                                        sx={{margin: "20px auto", width: "75%"}}
                                     />
                                     <CardContent>
                                         <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
@@ -256,7 +256,7 @@ const Home = () => {
                                 </CardActionArea>
                             </Card>
                         </Grid>
-                        <Grid item xs={2} md={2}>
+                        <Grid item xs={6} md={2}>
                             <Card sx={{ maxWidth: 200 }}>
                                 <CardActionArea>
                                     <CardMedia
