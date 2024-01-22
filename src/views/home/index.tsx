@@ -13,6 +13,9 @@ import { styled } from '@mui/material/styles'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
+// ** Components
+import LandManagementCommon from 'src/pages/dat-dai/chung'
+
 const LinkStyled = styled('a')(({ theme }) => ({
     fontSize: '1rem',
     textDecoration: 'none',
@@ -101,30 +104,32 @@ const Home = () => {
             <Grid container className='content-center'>
                 <Grid container xs={12} md={12} justifyContent="center" >
                     <Grid container direction="row" justifyContent="center" spacing={1} xs={10} md={9} sx={{ p: 2 }}>
-                        <Grid item xs={6} md={2}>
-                            <Card sx={{ maxWidth: 200 }}>
-                                <CardActionArea>
-                                    <CardMedia
-                                        component="img"
-                                        height="140"
-                                        image="/static/images/cards/contemplative-reptile.jpg"
-                                        alt="green iguana"
-                                    />
-                                    <CardContent>
-                                        <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
-                                            Đất đai
-                                        </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </Grid>
-                        <Grid item xs={6} md={2}>
-                            <Card sx={{ maxWidth: 200 }}>
-                                <CardActionArea>
-                                    <CardMedia
+                        <Link href="/dat-dai/chung">
+                            <Grid item xs={6} md={2}>
+                                <Card sx={{ maxWidth: 200 }}>
+                                    <CardActionArea>
+                                        <CardMedia
                                         component="img"
                                         image="/images/logos/geological-sign.png"
                                         alt="geological-sign"
+                                        sx={{margin: "20px auto", width: "75%"}}
+                                        />
+                                        <CardContent>
+                                            <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
+                                                Đất đai
+                                            </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                </Card>
+                            </Grid>
+                        </Link>
+                        <Grid item xs={6} md={2}>
+                            <Card sx={{ maxWidth: 200 }}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        image="/images/logos/giadat.png"
+                                        alt="giadat"
                                         sx={{margin: "20px auto", width: "75%"}}
                                     />
                                     <CardContent>
@@ -193,9 +198,9 @@ const Home = () => {
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"
-                                        height="140"
-                                        image="/static/images/cards/contemplative-reptile.jpg"
-                                        alt="green iguana"
+                                        image="/images/logos/office.png"
+                                        alt="office"
+                                        sx={{margin: "20px auto", width: "75%"}}
                                     />
                                     <CardContent>
                                         <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
@@ -210,9 +215,9 @@ const Home = () => {
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"
-                                        height="140"
-                                        image="/static/images/cards/contemplative-reptile.jpg"
-                                        alt="green iguana"
+                                        image="/images/logos/office-dkdd.png"
+                                        alt="office-dkdd"
+                                        sx={{margin: "20px auto", width: "75%"}}
                                     />
                                     <CardContent>
                                         <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
@@ -261,9 +266,9 @@ const Home = () => {
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"
-                                        height="140"
-                                        image="/static/images/cards/contemplative-reptile.jpg"
-                                        alt="green iguana"
+                                        image="/images/logos/quydat.png"
+                                        alt="quydat"
+                                        sx={{margin: "20px auto", width: "75%"}}
                                     />
                                     <CardContent>
                                         <Typography gutterBottom component="div" sx={{ fontSize: 16, color: '#083071', fontWeight: '500' }}>
